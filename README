@@ -1,0 +1,18 @@
+If using docker-compose.yml
+
+1. docker-compose up --build
+
+2. Once both containers are UP and running run
+
+docker-compose exec web python manage.py migrate
+
+To populate table inside the database.
+
+3. Copy sample data from local system to psql container
+
+docker cp user_car_data.sql 366342ec4477:/user_car_data.sql
+
+4. Import sample data from .sql file to database
+
+docker exec -it 366342ec4477 psql -U admin_user -d car -f /user_car_data.sql
+
