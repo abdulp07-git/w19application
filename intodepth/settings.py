@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'car',
         'USER': 'admin_user',
         'PASSWORD': 'password123',
-        'HOST': 'db'
+        'HOST': 'localhost'
     }
 }
 
