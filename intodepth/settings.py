@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-otk1@86eb#(!&e!@2yc7g&t2qbm=(s!7vpjy4$z3kv*)lkm_wv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 
 
 # Application definition
@@ -79,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'car',
-        'USER': 'admin_user',
-        'PASSWORD': 'password123',
-        'HOST': 'localhost'
+        'USER': 'postgres',
+        'PASSWORD': 'Password123',
+        'HOST': 'database-1.cleim0kswbg3.ap-south-1.rds.amazonaws.com'
     }
 }
 
