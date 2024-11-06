@@ -105,3 +105,12 @@ Steps:
 	Added A record for intodepth.in
 	Enabled aliace and set to loadbalancer.
 
+
+IMPORTANT:-
+
+The application directory have,
+1. Dockerfile to create the image of application. No use, We need DB as well for the app to work. So,
+2. Created docker-compose.yaml  to create image and start app and db together. It works
+3. sysctl init script for aws deployment.
+5. sample data .sql created by mockroo.com
+
