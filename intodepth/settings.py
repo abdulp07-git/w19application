@@ -27,7 +27,12 @@ SECRET_KEY = 'django-insecure-otk1@86eb#(!&e!@2yc7g&t2qbm=(s!7vpjy4$z3kv*)lkm_wv
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+#ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = [
+            'djangoAppLoadbalancer-540944711.ap-south-1.elb.amazonaws.com',
+            'intodepth.in',
+        ]
+
 
 
 # Application definition
