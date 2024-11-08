@@ -29,7 +29,7 @@ DEBUG = True
 #ALLOWED_HOSTS = []
 #ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 ALLOWED_HOSTS = [
-            'djangoAppLoadbalancer-540944711.ap-south-1.elb.amazonaws.com',
+            'dev-djangoLoadBalancer-608461561.ap-south-1.elb.amazonaws.com',
             'intodepth.in',
         ]
 
@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'car',
         'USER': 'postgres',
         'PASSWORD': 'Password123',
-        'HOST': 'database-1.cleim0kswbg3.ap-south-1.rds.amazonaws.com'
+        'HOST': 'database-2.cleim0kswbg3.ap-south-1.rds.amazonaws.com'
     }
 }
 
