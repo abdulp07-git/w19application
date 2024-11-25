@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
             'dev-djangoLoadBalancer-608461561.ap-south-1.elb.amazonaws.com',
             'intodepth.in',
             '13.201.92.45',
+            '52.66.188.117',
         ]
 
 
