@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'car',
         'USER': 'postgres',
         'PASSWORD': 'Password123',
-        'HOST': 'database-2.cleim0kswbg3.ap-south-1.rds.amazonaws.com'
+        'HOST': 'terraform-20241122203512208300000001.cleim0kswbg3.ap-south-1.rds.amazonaws.com'
     }
 }
 
