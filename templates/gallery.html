@@ -15,8 +15,8 @@
                     
                     <img src="https://d33frleuz6dkp9.cloudfront.net/{{ letter }}.png" class="card-img-top" alt="Image {{ letter }}">
                     -->
-                    <img src="{% static '{{ letter }}.png' %}" class="card-img-top" alt="Image {{ letter }}">
-                    
+                    <img src="{% static letter|add:'.png' %}" class="card-img-top" alt="Image {{ letter }}">                    
+
                     <div class="card-body text-center">
                         <p class="card-text">Image {{ letter|upper }}</p>
                     </div>
