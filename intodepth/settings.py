@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
             'intodepth.in',
             '13.201.92.45',
             '52.66.188.117',
+            'w19-lb-907848257.ap-south-1.elb.amazonaws.com'
         ]
 
 
